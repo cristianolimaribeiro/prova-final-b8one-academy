@@ -1,0 +1,226 @@
+﻿:root{
+    --primary-dark: #142159;
+    --primary-default: #425DC7;
+    --dark-text: #000;
+    --white-text: #FFF;
+    --medium-text: #333;
+    --low-text: #555;
+    --gray: #F1F2F9;
+    --transition: all .3s ease-in-out;
+}
+@media (max-width: 768px){
+    /*---- LOGIN PAGE ----*/
+
+    body{
+        padding: auto 16px;
+    }
+    .modal-content__title,
+    .modal-content__paragraph{
+        text-align: center;
+    }
+    .modal-content__title{
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .modal-content__paragraph{
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .container-modal{
+        padding: 32px 16px 16px;
+        max-width: 328px;
+    }
+    .container-login__input--view-password{
+        width: 297px;
+    }
+
+    /*-------- INFORMATION_BAR ----------*/
+
+    .information-bar__text{
+        font-size: 12px;
+    }
+    .information-bar__button{
+        font-size: 10px;
+    }
+
+    /*------ DATA-SUMMARY -----*/
+
+    .data-summary-calendar{
+        overflow-y: scroll;
+      }
+      .data-summary-calendar::-webkit-scrollbar{
+        display: none;
+      }
+
+    /* ------- general report --------*/
+
+    .general-report-datacard__container__text{
+        width:120px;
+    }
+
+    .general-report{
+        overflow: hidden;
+    }
+    .general-report-datacard{
+      overflow-y: scroll;
+    }
+    .general-report-datacard::-webkit-scrollbar{
+        display: none;
+    }
+    .products-title{
+        display: none;
+    }
+    .product-cards-info__departaments{
+        display: none;
+    }
+    .product-cards{
+        flex-direction: column;
+        width: 100%;
+        height: 96px;
+        margin-top: 30px;
+        flex-direction: row;
+    }
+    .product-cards-place__id{
+        padding-top: 20px;
+    }
+    .product-cards-description{
+        flex-direction: column-reverse;
+    }
+ 
+    .product-card__text{
+        width: 332px;
+    }
+    .product-cards-info{
+        width: 332px;
+        justify-content: space-around;
+    }
+    .products-container{
+        flex-direction: column;
+    }
+    .product-cards-info__value{
+        text-align: end;
+    }
+    .paginate-container{
+        flex-direction: column;
+    }
+    .paginate-container-quantity{
+        justify-content: center;
+    }
+    .controls{
+        justify-content: center;
+        margin: 20px 0;
+    }
+}
+
+@media (max-width: 460px){
+    /* Hamburguer */
+    
+    .hamburguer{
+        display: flex;
+        align-items: center;
+    }
+    .hamburguer {
+        margin-right: 4px;
+    }
+    
+    .hamburguer__action {
+        position: relative;
+        width: 24px;
+        height: 24px;
+        padding: 6px 4px;
+    }
+    
+    .hamburguer__item {
+        display: block;
+        width: 100%;
+        height: 1px;
+        background-color: var(--white-text);
+        margin: 4px 0;
+    }
+    
+    .hamburguer__item:before,
+    .hamburguer__item:after {
+        content: "";
+        position: absolute;
+        left: 4px;
+        display: block;
+        width: calc(100% - 12px);
+        height: 1px;
+        background-color: var(--white-text);
+    }
+    
+    .hamburguer__item:before {
+        top: 6px;
+    }
+    
+    .hamburguer__item:after {
+        bottom: 6px;
+    }
+    .container-avatar-text{
+        width: 130px;
+    }
+    .menu-user-actions__list{
+        margin-left: 10px;
+    }
+    .name-avatar{
+        display: none;
+    }
+    /* Aside */
+    .sidebar {
+        left: -999px;
+        transition: all .5s ease-in-out;
+        z-index: 1;
+    }
+    .sidebar-show{
+        left: 0;
+    }
+    .main-content{
+        margin: 0;
+    }
+    .information-bar{
+        padding: 20px;
+    }
+    .information-bar__text{
+        padding: 28px 8px;
+    }
+    .information-bar__button{
+        display: none;
+    }
+    .data-summary__text{
+        flex-direction: column;
+    }
+    .data-summary__text--gray,
+    .data-summary__text--default{
+        margin: 0;
+    }
+    .chart-container{
+        margin-top: 24px;
+    }
+    .products-title{
+        display: none;
+    }
+    .product-cards-info__departaments{
+        display: none;
+    }
+    .product-cards p{
+        font-size: 10px;
+    }
+    .product-card__text{
+        width: 100%;
+    }
+
+    .product-cards-info{
+        width:100%;
+        justify-content: space-around;
+    }
+    .ranking-reseller-position{
+        margin: 0;
+    }
+    .reseller-increase-arrow{
+        margin: 0;
+    }
+    .ranking-container{
+        margin: 12px;
+    }
+
+}   

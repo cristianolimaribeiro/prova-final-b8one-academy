@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/login.css">
+    <link rel="stylesheet" href="./assets/css/mobile.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="container-modal">
+        <form class="modal-content">
+            <h2 class="modal-content__title">Olá, tudo bem? <span>&#128075</span></h2>
+            <p class="modal-content__paragraph">Vamos decolar para grandes dias de vendas</p>
+            <div class="container-login-input">
+                <label for="name" class="container-login__label">
+                    Seu E-mail
+                </label>
+                <input class="container-login__input" type="text" placeholder="exemplo@email.com" name="name" id="email">
+                <h3 class="alert"></h3>
+                <label for="password" class="container-login__label">
+                    Sua Senha
+                </label>
+                <div class="relative">
+                    <input class="container-login__input container-login__input--view-password" type="password" placeholder="Digite sua Senha" name="password" id="password">  
+                    <img class="hide"src="./assets/images/icons/eye-off.png" alt="show-hide">             
+                </div>
+            </div>
+            <div class="container-connection">
+                <div class="container-login__connected">
+                    <input type="checkbox" class="container-connected__checkbox" checked>
+                    <label class="container-connection__label">Manter conectado</label>
+                </div>
+                <a href="#" class="container-connected__link">Esqueci minha senha</a>
+            </div>
+            <button class="modal-content__button">Entrar</button>
+            <div id="loading"></div>
+        </form>
+    </div>
+<script src="./assets/scripts/login.js"></script>    
+</body>
+</html>
